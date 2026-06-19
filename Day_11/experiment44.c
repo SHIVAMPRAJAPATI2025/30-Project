@@ -1,0 +1,21 @@
+// Write a program to Write function to find factorial.
+#include <stdio.h>
+ long long factorial(int n) {
+    if (n<0) {
+        return -1;
+    } else {
+        if(n==0 || n==1) {
+            return 1;
+        } else {
+            return n* factorial(n-1);
+        }
+        }
+    }
+    
+ int main() {
+    int num;
+    printf("enter the number: ");
+    scanf("%d",&num);
+    printf("factorial of %d= %lld\n",num,  factorial(num));
+    return 0;
+ }
