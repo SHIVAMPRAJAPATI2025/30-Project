@@ -27,7 +27,7 @@ for( i=0, j=n1; i<n2; i++, j++) {
 }
 printf("Merged array: ");
 for( i=0; i<n1+n2; i++) {
-    printf("%d", c[i]);
+    printf("%d ", c[i]);
 }
 return 0;
 }
